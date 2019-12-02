@@ -20,3 +20,4 @@ TODOs:
 - [ ] CLI version
 
 ## Exercise 4: [HTML Link Extractor](https://github.com/gophercises/link) ([solution](link))
+XML is the worst :confounded: I got the href extraction working, don't really feel like doing the text extraction.
