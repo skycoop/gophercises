@@ -13,4 +13,8 @@ I mostly solved the problem. YAML is easy so I ignored that. Overall, this solut
 complicated and feature complete, so I think I'll loop back to it after doing some more excercises.
 
 ## Exercise 3: [Choose Your Own Adventure](https://github.com/gophercises/cyoa) ([solution](cyoa))
-Solution pending
+Fairly simple one. The templating library is a bit odd, but not terrible to work with. 
+TODOs:
+- [ ] Investigate using [pkger](https://github.com/markbates/pkger) for embedding the template files in the binary
+- [ ] Make it prettier
+- [ ] CLI version
