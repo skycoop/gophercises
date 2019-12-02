@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"encoding/csv"
+	"errors"
 	"flag"
 	"fmt"
 	log "github.com/sirupsen/logrus"
@@ -25,10 +26,12 @@ type Options struct {
 }
 
 func handleArgs() Options {
-	problemFile := flag.String("problem-file", "quiz/data/problems.csv", "A CSV file containing the questions and answers")
+	problemFile := flag.String("problem-file", "quiz/data/problems.csv",
+		"A CSV file containing the questions and answers")
 	debug := flag.Bool("debug", false, "Whether to print debug logging")
 	shuffle := flag.Bool("shuffle", false, "Whether to shuffle the problems loaded from the file")
-	timeLimit := flag.Duration("time-limit", 30*time.Second, "Set the duration of the time limit for answering questions")
+	timeLimit := flag.Duration("time-limit", 30*time.Second,
+		"Set the duration of the time limit for answering questions")
 	flag.Parse()
 
 	options := Options{
@@ -66,7 +69,7 @@ func loadProblems(filename string, shuffle bool) ([]Problem, error) {
 		return nil, err
 	}
 	if len(records) == 0 {
-		return nil, fmt.Errorf("no questions in file")
+		return nil, errors.New("no questions in file")
 	}
 
 	var problems []Problem
