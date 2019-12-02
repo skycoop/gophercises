@@ -18,3 +18,5 @@ TODOs:
 - [ ] Investigate using [pkger](https://github.com/markbates/pkger) for embedding the template files in the binary
 - [ ] Make it prettier
 - [ ] CLI version
+
+## Exercise 4: [HTML Link Extractor](https://github.com/gophercises/link) ([solution](link))

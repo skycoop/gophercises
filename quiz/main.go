@@ -72,7 +72,7 @@ func loadProblems(filename string, shuffle bool) ([]Problem, error) {
 		return nil, errors.New("no questions in file")
 	}
 
-	var problems []Problem
+	problems := make([]Problem, len(records))
 	for _, record := range records {
 		problem := Problem{
 			question: record[0],
