@@ -40,3 +40,8 @@ Huh well I guess this counts as an exercise.
 Solutions:
 - [CamelCase](https://www.hackerrank.com/challenges/camelcase/submissions/code/132837633)
 - [Caesar Cipher](https://www.hackerrank.com/challenges/caesar-cipher-1/submissions/code/132839737)
+
+## Excercise 7: [TODO List](https://github.com/gophercises/task) [solution](todo)
+Oh sweet this exercise (despite it's non-obvious name) is exactly what I wanted. I wanted to fiddle with 
+[cobra](https://github.com/spf13/cobra) and [BoltDB](https://github.com/etcd-io/bbolt) (I'm using the etcd fork since
+the original isn't being updated and I like etcd). 
